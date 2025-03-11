@@ -1,0 +1,36 @@
+databaseChangeLog:
+  - changeSet:
+      id: v1.0.0_20250308_create_book_table
+      author: margarita
+      changes:
+        - createTable:
+            tableName: book
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: author
+                  type: VARCHAR(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: publication_year
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: available_copies
+                  type: INT
+                  defaultValueNumeric: 0
+                  constraints:
+                    nullable: false
