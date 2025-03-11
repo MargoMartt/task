@@ -9,4 +9,6 @@ To test feign, please, add new book with such parameters:
            "publicationYear": 2023,
            "availableCopies": 5,
 }.
+Use the link: http://localhost:8081/h2-console/login.jsp?jsessionid=dbf307014689b9661f543c77fcf15169
+to see changes in db (login: "sa" ; password : "password")
 If something went wrong, please, contact me.
